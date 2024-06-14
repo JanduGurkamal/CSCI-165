@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        
+        <fieldset>
+        <legend>User Login Info</legend>
+
+        <div id="UserLoginInfo">
+            <input type="text" placeholder="Name" name="Name of the User">
+            <input type="text" placeholder="Email" name="Email of the User">
+            <input type="password" placeholder="Password" name="Password entered">
+    
+        </div>
+    
+    </fieldset>
+
+    <fieldset>
+        <legend>Profile Info</legend>
+    
+        <div>
+            <input type="checkbox" name="Happy or not" id="profileInfoHappy"><label for="profileInfoHappy">Happy?</label> <br>
+        </div>
+           
+        <div>
+        
+            <label for="interestRate">Rate your interest in coffee.</label>
+            <input type="radio" name="rating" id="interestRate" value="1/4"><input type="radio" value="2/4" name="rating" id=""><input value="3/4" type="radio" name="rating" id=""><input type="radio" name="rating" id="" value="4/4">
+        
+        </div>
+    
+    </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+    
+        <div>
+
+            <label for="browserBox">Browsers</label> <input name="Favorite Browsers" id="browserBox" type="text">
+            <label for="favoriteColor">Favorite:</label> <input name = "Favorite color" id = "favoriteColor" type="color">
+            <label for="dateOfBirth">DOB:</label> <input id="dateOfBirth" type="date" name="Date of birth">
+            <label for="favMonth">Favorite month:</label> <input id="favMonth" type="text" name="Favorite month">
+            <label for="age">Age:</label> <input id="age" type="number" name="Age">
+            <select name="Status" name="Satus of immigration">
+                <option value="Newcomer">Newcomer</option>
+                <option value="Citizen">Citizen</option>
+                <option value="PR">PR</option>   
+            </select>
+
+            <select name="Status" multiple size="3" name="Language selection">
+                <option value="C#">C#</option>
+                <option value="HTML">HTML</option>
+                <option value="Java">Java</option>   
+            </select>
+
+        </div>
+    
+    </fieldset>
+
+        <fieldset>
+            <legend>Review</legend>
+    
+        <div>
+
+            <label for="chooseFile">Upload Comment File:</label> <input id="chooseFile" type="file">
+
+        </div>
+    
+    </fieldset>
+
+        <fieldset>
+            <legend>Submission</legend>
+    
+
+        <div>
+
+            <input type="submit" name="Submit" value="Submit">
+            <img src="folder-icon.jpg" alt="folder logo" width="5%">
+            <input type="reset" name="reset" value="Reset">
+            <input type="button" name="Calculate" value="Calculate Total">
+        
+        </div>
+            
+    </fieldset>
+
+    </form>
+</body>
+</html>
