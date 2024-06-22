@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7</title>
+</head>
+<body>
+<script>
+    var inputData = prompt("What is your final grade: ");
+    if(inputData >= 90 && inputData <=100){
+        document.write("Your Grade Letter is A");
+    }
+    else if(inputData >= 80 && inputData <=89){
+        document.write("Your Grade Letter is B");
+    }
+    else if(inputData >= 70 && inputData <=79){
+        document.write("Your Grade Letter is C");
+    }
+    else if(inputData >= 60 && inputData <=69){
+        document.write("Your Grade Letter is D");
+    }
+    else if(inputData >= 50 && inputData <=59){
+        document.write("Your Grade Letter is E");
+    }
+    else if(inputData >= 0 && inputData <=49){
+        document.write("Your Grade Letter is F");
+    }
+    else {
+        document.write("Please enter valid grade in range 0-100");
+    }
+</script>
+</body>
+</html>
