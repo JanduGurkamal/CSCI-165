@@ -3,89 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scrunchies Land Co</title>
+    <title>iCloud-like Website</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <header class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Scrunchies Land Co</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </header>
-    
-    <section id="home" class="hero-section">
-        <div class="container text-center">
-            <h1>Welcome to Scrunchies Land Co</h1>
-            <p>Your one-stop shop for beautiful, handmade scrunchies</p>
-            <a href="#products" class="btn btn-primary">Shop Now</a>
-        </div>
-    </section>
-    
-    <section id="products" class="products-section py-5">
-        <div class="container">
-            <h2 class="text-center">Our Products</h2>
-            <div class="row">
-                <!-- Example product -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/scrunchie1.jpg" class="card-img-top" alt="Scrunchie 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Floral Scrunchie</h5>
-                            <p class="card-text">$5.99</p>
-                            <a href="#" class="btn btn-primary">Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add more products as needed -->
+    <div class="container">
+        <header>
+            <div class="logo">iCloud</div>
+            <div class="profile">
+                <img src="path-to-your-profile-pic.jpg" alt="Profile Picture">
             </div>
-        </div>
-    </section>
-    
-    <section id="about" class="about-section py-5">
-        <div class="container">
-            <h2 class="text-center">About Us</h2>
-            <p>Scrunchies Land Co was founded with the mission to provide stylish and high-quality scrunchies to everyone. Our scrunchies are handmade with love and care, ensuring that each piece is unique and perfect for any occasion.</p>
-        </div>
-    </section>
-    
-    <section id="contact" class="contact-section py-5">
-        <div class="container">
-            <h2 class="text-center">Contact Us</h2>
-            <form id="contact-form" class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" class="form-control" required>
+        </header>
+        <main>
+            <div class="profile-info">
+                <div class="avatar">
+                    <img src="path-to-your-profile-pic.jpg" alt="Avatar">
                 </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" class="form-control" required>
+                <div class="details">
+                    <h1>Gurkamal</h1>
+                    <p>gurkamal35.jandu@icloud.com</p>
+                    <p>iCloud+</p>
                 </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" class="form-control" required></textarea>
+            </div>
+            <div class="widgets">
+                <div class="widget mail">
+                    <h2>Mail</h2>
+                    <ul>
+                        <li><span>GitHub</span> - A third-party OAuth application</li>
+                        <li><span>Prime Video</span> - 'I Am: Celia' now streaming</li>
+                        <li><span>Amazon.ca</span> - We found something you might like</li>
+                        <li><span>WorkPerks</span> - Summer Sale-a-bration: Hot Deals, Cool Stuff</li>
+                        <li><span>Amazon.ca</span> - Prime Day is July 16-17</li>
+                        <li><span>Interactive Brokers</span> - Earn Interest</li>
+                    </ul>
                 </div>
-                <button type="submit" class="btn btn-primary">Send</button>
-            </form>
-        </div>
-    </section>
-    
-    <footer class="text-center py-4">
-        <p>&copy; 2024 Scrunchies Land Co. All rights reserved.</p>
-    </footer>
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="app.js"></script>
+                <div class="widget reminders">
+                    <h2>Reminders</h2>
+                    <p>No Reminders</p>
+                </div>
+                <div class="widget drive">
+                    <h2>Drive</h2>
+                    <ul>
+                        <li>W5_Ch5-2 Dynamic Modeling - PPT</li>
+                        <li>Vaccine - PDF</li>
+                        <li>Gurkamal Singh Jandu Social Ins... - PDF</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
