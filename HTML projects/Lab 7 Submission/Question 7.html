@@ -8,27 +8,29 @@
 <body>
 <script>
     var inputData = prompt("What is your final grade: ");
+    var letterGrade = 'None';
     if(inputData >= 90 && inputData <=100){
-        document.write("Your Grade Letter is A");
+        letterGrade = 'Your letter grade is: A'
     }
     else if(inputData >= 80 && inputData <=89){
-        document.write("Your Grade Letter is B");
+        letterGrade = 'Your letter grade is: B'
     }
     else if(inputData >= 70 && inputData <=79){
-        document.write("Your Grade Letter is C");
+        letterGrade = 'Your letter grade is: C'
     }
     else if(inputData >= 60 && inputData <=69){
-        document.write("Your Grade Letter is D");
+        letterGrade = 'Your letter grade is: D'
     }
     else if(inputData >= 50 && inputData <=59){
-        document.write("Your Grade Letter is E");
+        letterGrade = 'Your letter grade is: E'
     }
     else if(inputData >= 0 && inputData <=49){
-        document.write("Your Grade Letter is F");
+        letterGrade = 'Your letter grade is: F'
     }
     else {
-        document.write("Please enter valid grade in range 0-100");
+        letterGrade = "Please enter valid grade in range 0-100";
     }
+    document.write(letterGrade)
 </script>
 </body>
 </html>

@@ -1,13 +1,26 @@
-let a=10;
-{
-console.log(a);
-const b = 12;
-console.log(b);
+// const firstName = prompt("Typr your first name: ");
+// console.log(firstName)
+
+grade = prompt("What are your grades? ");
+
+let letterGrade = "None";
+if(grade >= 90){
+    letterGrade = 'A';
 }
-{
-console.log(a);
-const c = 30;
-console.log(c);
+else if(grade >= 80){
+    letterGrade = 'B';
 }
-console.log(b);
-console.log(c);
+
+else if(grade >= 70){
+    letterGrade = 'C';
+}
+
+else if(grade >= 60){
+    letterGrade = 'D';
+}
+
+else {
+    letterGrade = 'F'
+}
+
+document.write(letterGrade);
