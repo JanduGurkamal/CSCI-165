@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 9</title>
+</head>
+<body>
+    <script>
+        let arr1 = ["Honda", "Toyota", 'BMW', 1, 2, 3.123];
+        document.write("Length of the Array: " + arr1.length + '<br>' + '<br>');
+        document.write('Data type of the first element: ' + typeof arr1[0] + '<br>' + '<br>');
+        console.log(arr1[arr1.length - 1]);
+        arr1.push('CSCI165');
+        console.log(arr1);
+        arr1.unshift('HTML', 'CSS', 'JavaScript');
+        document.write("New Array: " + arr1 + '<br>' + '<br>');
+        arr1.pop() ;
+        console.log(arr1) ;
+        for (let i = 0 ; i < arr1.length ; i++)
+        {
+            document.write(arr1[i] + '<br>');
+        }
+
+    </script>
+</body>
+</html>
