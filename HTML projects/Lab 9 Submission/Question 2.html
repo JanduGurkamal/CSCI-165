@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function showMedicalStatus(firstName, age, highBloodPressure) {
+    if (age >= 55 && highBloodPressure) {
+        console.log(`Medical Alert: ${firstName} see a doctor!`);
+    } else if (highBloodPressure) {
+        console.log(`Warning: ${firstName}, seeing a doctor is recommended.`);
+    } else {
+        console.log(`${firstName}, you are in good health. See you next checkup.`);
+    }
+    }
+
+    showMedicalStatus("Bob", 60, true);
+    showMedicalStatus("Jane", 60, false);
+    showMedicalStatus("Brad", 28, true);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function showBalanceSchedule(name, balance, interestRate) {
+        console.log(`Balance schedule for ${name}:`);
+        for (let year = 1; year <= 5; year++) {
+          balance = balance * interestRate;
+          let roundedBalance = Math.round(balance * 100) / 100;
+          console.log(`Year ${year}: $${roundedBalance}`);
+            }
+        }
+
+        showBalanceSchedule("Louise", 5.25, 1.07,7);
+        showBalanceSchedule("Larry", 52.25, 0,6);
+        showBalanceSchedule("Mehri", 152.25, 1.15,6);
+    </script>
+</body>
+</html>
