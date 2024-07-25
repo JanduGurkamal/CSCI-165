@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">Change my background color</p>
+    <button id="btn1">Click me</button>
+    
+    <script>
+        document.getElementById('btn1').addEventListener('click', function () {
+            const p1 = document.getElementById('p1');
+            p1.style.backgroundColor = 'blue';
+        });
+    </script>
+</body>
+</html>

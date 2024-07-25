@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSCI165 lab</title>
+</head>
+
+<body>
+    <h3>Loop Over DOM Elements</h3>
+    <p>Hello World</p>
+    <p>Hello HTML</p>
+    <p>Hello CSS</p>
+    <p>Hello JavaScript</p>
+    <hr>
+    <h3>Show your contents below</h3>
+    <!-- your contents should be printed here -->
+    <p id="p1"></p>
+
+    <script>
+        // your code starts here
+        const paragraphs = document.querySelectorAll('body > p');
+        let content = '';
+        for (let i = 0; i < paragraphs.length; i++) {
+            content += paragraphs[i].textContent + '<br>';
+        }
+        document.getElementById('p1').innerHTML = content;
+    </script>
+</body>
+
+</html>
