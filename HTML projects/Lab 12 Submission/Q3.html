@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome Page</title>
+    <style>
+body{
+    font-size: larger;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <h2 id="greet"></h2>
+    <p id="welcome"></p>
+    <script>
+            var fullName = prompt("Please enter your full name:");
+            var now = new Date();
+            var hours = now.getHours();
+            var greeting;
+
+            if (hours < 12) {
+                greeting = "Good morning";
+            } else if (hours < 18) {
+                greeting = "Good afternoon";
+            } else {
+                greeting = "Good evening";
+            }
+            document.getElementById("greet").innerHTML = greeting + ", " + fullName + "!";
+            document.getElementById("welcome").innerHTML = "Welcome to my web page";
+    </script>
+</body>
+
+</html>
